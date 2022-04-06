@@ -1,0 +1,449 @@
+        /* montserrat-300 - latin_cyrillic */
+        
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/montserrat-v23-latin_cyrillic-300.woff') format('woff');
+        }
+        /* montserrat-regular - latin_cyrillic */
+        
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+            /* Legacy iOS */
+        }
+        /* montserrat-600 - latin_cyrillic */
+        
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/montserrat-v23-latin_cyrillic-600.woff') format('woff');
+            /* Legacy iOS */
+        }
+        /* montserrat-700 - latin_cyrillic */
+        
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/montserrat-v23-latin_cyrillic-700.woff') format('woff');
+            /* montserrat-800 - latin_cyrillic */
+        }
+        
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/montserrat-v23-latin_cyrillic-800.woff') format('woff');
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* a {
+    text-decoration: none;
+ 
+} */
+        
+        html {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            width: 1920px;
+        }
+        
+        ul {
+            margin: 0;
+            /* убираем отступы для элементов*/
+            padding: 0;
+            list-style: none;
+            /*убирает маркеры*/
+        }
+        
+        img {
+            max-width: 100%;
+            /* чтобы изображение было не шире страницы*/
+        }
+        
+        .container {
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        
+        p,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .fill-button {
+            padding: 20px 38px;
+            color: white;
+            border: 1px solid #FF9900;
+            background-color: #FF9900;
+        }
+        /* HEADER */
+        
+        .header {
+            padding-left: 75px;
+            padding-right: 75px;
+            height: 100px;
+            border-bottom: 1px solid black;
+        }
+        
+        .header-list {
+            display: flex;
+        }
+        
+        .header-list__logo {
+            padding: 14px 0px;
+            margin-right: auto;
+        }
+        
+        .search-btn {
+            padding: 38px 0px;
+            border: none;
+            background: transparent;
+        }
+        
+        .header-list__nav-item {
+            padding: 39px 0px;
+            margin-right: 85px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            color: #333333;
+        }
+        /*PROJECT*/
+        
+        .section-project {
+            padding-left: 80px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background: url(/img/project/balcon.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .section-project_header {
+            margin-bottom: 24px;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 85px;
+            color: #FFFFFF;
+        }
+        
+        .section-project_description {
+            margin-bottom: 90px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+        
+        .section-project__container {
+            width: 50%;
+        }
+        
+        .project-btn {
+            padding: 24.83px 36.88px;
+            font-weight: 700;
+            font-size: 23.4581px;
+            line-height: 29px;
+            /* identical to box height */
+            text-align: center;
+            color: #FFFFFF;
+        }
+        /* ABOUT */
+        
+        .section-about_header {
+            margin-top: 100px;
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            color: #333333;
+        }
+        
+        .section-about_description {
+            max-width: 1235px;
+            margin-bottom: 50px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 2;
+            color: #333333;
+        }
+        
+        .about-wall {
+            display: flex;
+        }
+        
+        .wall-card {
+            flex: 1 1 50%;
+        }
+        
+        .wall-card:first-child {
+            margin-right: 32px;
+            background: url(/img/about/worker.jpg) center center no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: stretch;
+        }
+        
+        .wall-card__bottom {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .wall-card__bottom_text {
+            max-width: 454px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 32px;
+            /* or 200% */
+            color: white;
+        }
+        
+        .border-button {
+            padding: 20px 38px;
+            background-color: transparent;
+            border: 3px solid #FF9900;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+            text-align: center;
+            color: white;
+        }
+        
+        .wall-card__item {
+            padding-top: 65px;
+            padding-bottom: 65px;
+            padding-left: 60px;
+            padding-right: 120px;
+            display: flex;
+        }
+        
+        .wall-card__item:first-child {
+            margin-bottom: 32px;
+        }
+        
+        .wall-card__item {
+            border: 1px solid #CACACA;
+        }
+        
+        .wall-card__container {
+            padding-left: 50px;
+            max-width: 452px;
+        }
+        
+        .card-icon_first {
+            height: 165px;
+            width: 190px;
+            background-image: url(/img/about/box.svg);
+        }
+        
+        .card-icon_second {
+            height: 165px;
+            width: 190px;
+            background-image: url(/img/about/gear.svg);
+        }
+        
+        .wall-card_header {
+            padding-bottom: 8px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #333333;
+        }
+        
+        .wall-card_description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+        }
+        /* WORK */
+        
+        .section-work_header {
+            margin-top: 100px;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            color: #333333;
+        }
+        
+        .work-nav {
+            margin: 50px 0px;
+            display: flex;
+        }
+        
+        .work-nav_button {
+            margin-right: 85px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            color: #333333;
+        }
+        
+        .work-step {
+            display: flex;
+        }
+        
+        .work-step__item {
+            flex: 1 1 50%;
+        }
+        
+        .work-step__item_header {
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            color: #333333;
+        }
+        
+        .work-step__item_description {
+            margin-bottom: 50px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            /* or 200% */
+            color: #333333;
+        }
+        
+        .work-step__item:first-child {
+            margin-right: 142px;
+        }
+        
+        .work-step__item:last-child {
+            background: url(/img/work/work-1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .white-button {
+            padding: 20px 38px;
+            color: #333333;
+            border: 1px solid black;
+            background-color: transparent;
+        }
+        
+        .work-btn {
+            margin-right: 32px;
+        }
+        
+        .work-fill-btn {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+            text-align: center;
+            color: #FFFFFF;
+        }
+        /* FAQ */
+        
+        .section-faq_header {
+            margin-top: 100px;
+            margin-bottom: 32px;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 59px;
+            color: #333333;
+        }
+        
+        .section-faq__item {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #CACACA;
+        }
+        
+        .section-faq__item:last-child {
+            border-bottom: 1px solid #CACACA;
+        }
+        
+        .section-faq__item {
+            padding: 30px 0px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            color: #333333;
+        }
+        
+        .quest-button {
+            margin-left: auto;
+            background-color: transparent;
+            border: none;
+        }
+        
+        .quest-button_img {
+            width: 50px;
+            height: 50px;
+        }
+        /* FOOTER */
+        
+        .section-footer {
+            margin-top: 100px;
+            padding: 50px 75px;
+            background-color: #222222;
+        }
+        
+        .footer-columns {
+            display: flex;
+        }
+        
+        .first-column {
+            min-width: 251px;
+            margin-right: 350px;
+        }
+        
+        .footer-logo_img {
+            margin-bottom: 20px;
+        }
+        
+        .footer-nav {
+            margin-bottom: 90px;
+        }
+        
+        .footer-nav__item_link {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 36px;
+            /* identical to box height, or 200% */
+            color: #CACACA;
+        }
+        
+        .footer-social {
+            display: flex;
+        }
+        
+        .footer-social__link {
+            margin-right: 25px;
+        }
+        
+        @media (max-width: 1400px) {
+            body {
+                width: 1360px;
+            }
+        }
