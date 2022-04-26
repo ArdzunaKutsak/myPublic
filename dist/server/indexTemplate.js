@@ -10,7 +10,7 @@ export const indexTemplate = (content) => `
 <script src="/static/client.js" type="application/javascript"></script></head>
 
 <body>
-    <div class="react_root">${content}</div>
+    <div id="react_root">${content}</div>
 </body>
 
 </html>

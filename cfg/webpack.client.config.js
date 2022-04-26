@@ -25,7 +25,7 @@ module.exports = {
             use: ['ts-loader'],
         }]
     },
-    externals: [nodeExternals()],
+    // externals: [nodeExternals()],
     // optimization: {
     //     minimize: true,
     // },

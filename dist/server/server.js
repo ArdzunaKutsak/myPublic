@@ -16,7 +16,7 @@
   \**************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.indexTemplate = void 0;\r\nconst indexTemplate = (content) => `\r\n    <!DOCTYPE html>\r\n<html lang=\"ru\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Reddit</title>\r\n<script src=\"/static/client.js\" type=\"application/javascript\"></script></head>\r\n\r\n<body>\r\n    <div class=\"react_root\">${content}</div>\r\n</body>\r\n\r\n</html>\r\n`;\r\nexports.indexTemplate = indexTemplate;\r\n\n\n//# sourceURL=webpack://react/./dist/server/indexTemplate.js?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.indexTemplate = void 0;\r\nconst indexTemplate = (content) => `\r\n    <!DOCTYPE html>\r\n<html lang=\"ru\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Reddit</title>\r\n<script src=\"/static/client.js\" type=\"application/javascript\"></script></head>\r\n\r\n<body>\r\n    <div id=\"react_root\">${content}</div>\r\n</body>\r\n\r\n</html>\r\n`;\r\nexports.indexTemplate = indexTemplate;\r\n\n\n//# sourceURL=webpack://react/./dist/server/indexTemplate.js?");
 
 /***/ }),
 
