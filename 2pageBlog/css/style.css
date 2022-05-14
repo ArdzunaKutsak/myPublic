@@ -1,0 +1,36 @@
+.container {
+    margin-top: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    padding: 10px 0px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link-pages {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    font-size: 24px;
+}
+
+
+/* POSTS */
+
+.comment-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}

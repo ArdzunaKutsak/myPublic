@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="inputmask.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <!-- <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="/style.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #map {
+            margin-left: 50px;
+        }
+        
+        .ymaps-2-1-79-ground-pane {
+            filter: grayscale(100%);
+        }
+        
+        .ymaps-2-1-79-map-copyrights-promo {
+            display: none;
+        }
+        
+        .ymaps-2-1-79-copyright__wrap {
+            display: none !important;
+        }
+        
+        html {
+            font-family: sans-serif;
+        }
+        
+        body {
+            background-color: #5f5f5f;
+        }
+        
+        .flex1 {
+            display: flex;
+        }
+        
+        .check {
+            display: none
+        }
+        
+        .check-label {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #333333;
+        }
+        
+        .check-label::before {
+            content: url('/img/checkbox.svg');
+            margin-right: 7px;
+            display: inline-block;
+            transform: translateY(3px);
+            cursor: pointer;
+        }
+        
+        .check:checked+.check-label::before {
+            content: url('/img/Rectangle\ 147.svg');
+            background: url('/img/Rectangle\ 99.svg') no-repeat;
+            background-position: 50% 30%;
+        }
+        
+        .check:disabled+.check-label::before {
+            content: url('/img/checkbox.svg');
+        }
+        
+        .container-label {
+            padding: 20px 30px;
+            min-width: 176px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            /* identical to box height */
+            color: #333333;
+        }
+        /* * {
+            -webkit-box-sizing: unset;
+            box-sizing: unset;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="flex1">
+        <div class="div">
+            <label class="container-label"> Категории:       
+            <input type="checkbox" id="check1" class="check"><label for="check1" class="check-label"> Динозавры
+            </label>
+            <input type="checkbox" id="check2" class="check"><label for="check2" class="check-label">
+            Медведи
+            </label>
+            <input type="checkbox" id="check3" class="check"><label for="check3" class="check-label">
+            Косули
+            </label>
+            <input type="checkbox" id="check4" class="check"><label for="check4" class="check-label">
+            Лисы
+            </label>
+            <input type="checkbox" id="check5" class="check"><label for="check5" class="check-label">
+            Волки
+            </label>
+            <input type="checkbox" id="check6" class="check"><label for="check6" class="check-label">
+            Олени и лоси
+            </label>
+            </label>
+        </div>
+
+
+        <select name="select" class="js-choice" id="">
+        <option value="">Материал</option>
+        <option value="wood">Древесина</option>
+        <option value="metall">Металл</option>
+        <option value="rock">Камень</option>
+        <option value="plastic">Пластик</option>
+        <option value="composid">Композитный</option>
+        <option value="gyps">Гипс</option>
+    </select>
+
+
+
+
+        <div id="map" style="width: 600px; height: 400px"></div>
+
+    </div>
+    <div class="flex1">
+        <!-- <div class="scroll" data-simplebar>Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что
+            высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса
+            освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно
+            открывает новые горизонты для первоочередных требований.</div>
+
+
+        <form id="form" class="form" action="">
+            <label class="label-input" for="name">
+            <input class="input" placeholder="Имя*" type="text" name="name" id="name"></label>
+            <label class="label-input" for="selector">
+            <input class="input" placeholder="Телефон*" id="selector" type="tel" data-validate-field="phone"></label>
+            <label class="label-input" for="email">
+            <input class="input" placeholder="E-mail*" type="email" name="email" id="email"></label>
+
+            <button class="submit btn btn-primary" id="submit-btn">Заказать</button>
+          
+        </form> -->
+
+        <p class="toolP">
+            Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.<button id="myButton" class="tooltipMy"></button>
+        </p>
+
+    </div>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+        tippy('#myButton', {
+            content: 'Глава 2, страница 176',
+        });
+    </script>
+    <!-- <script src="tooltip1.js"></script>
+    <script src="tooltip2.js"></script> -->
+    <script src="/choices.min.js"></script>
+    <script>
+        const element = document.querySelector('.js-choice');
+        const choices = new Choices(element, {
+            searchEnabled: false,
+            position: 'bottom',
+            itemSelectText: '',
+            shouldSort: false,
+        });
+
+
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [48.8798671710934, 2.349611293126312],
+                zoom: 10,
+                controls: [],
+            });
+            var myPlacemark = new ymaps.Placemark([48.8798671710934, 2.349611293126312], {
+                hintContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени  54',
+            }, {
+                iconLayout: 'default#image',
+                iconImageClipRect: [
+                    [0, 0],
+                    [28, 40]
+                ],
+                iconImageHref: 'img/mapMark.svg',
+                iconImageSize: [28, 40],
+                iconImageOffset: [-14, -40],
+
+            });
+            myMap.geoObjects.add(myPlacemark)
+        }
+        const validation = new window.JustValidate('#form');
+        validation
+            .addField('#name', [{
+                rule: 'required',
+                errorMessage: 'Вы не ввели имя',
+            }, ])
+            .addField('#selector', [{
+                rule: 'required',
+                errorMessage: 'Вы не ввели телефон'
+            }, {
+                rule: 'customRegexp',
+                value: /.*\d$/,
+                errorMessage: 'Неверно набран номер',
+            }, ])
+            .addField('#email', [{
+                rule: 'required',
+                errorMessage: 'Вы не ввели e-mail',
+            }, ]);
+        var selector = document.getElementById("selector");
+        var im = new Inputmask("+7(999)999-99-99");
+        im.mask(selector);
+
+        // import tippy from 'tippy.js';
+        // import 'tippy.js/dist/tippy.css';
+
+        // tippy(document.getElementById('my-element'))
+    </script>
+</body>
+
+</html>

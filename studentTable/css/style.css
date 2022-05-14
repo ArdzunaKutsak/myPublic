@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.form {
+    margin-top: 100px;
+    margin-bottom: auto;
+    margin-left: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding-left: 5px;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-left: 440px;
+    width: calc(100% - 440px);
+}
+
+.th {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.invalid {
+    border-color: brown;
+    background-color: rgba(255, 80, 80, 0.568);
+}
+
+.error-name,
+.error-date,
+.error-study {
+    display: none;
+}
+
+.error {
+    display: block;
+    color: brown;
+    font-size: 16px;
+}
+
+.btn-danger {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    position: fixed;
+}
+
+.filter-container {
+    display: flex;
+}
+
+.filter-input {
+    flex: 25%
+}

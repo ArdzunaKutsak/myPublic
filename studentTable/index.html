@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Table</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body><button class="btn btn-danger">Очистить таблицу</button>
+    <form class="form" action="#">
+
+        <input type="text" placeholder="ФИО*" class="input input-name">
+
+        <input type="text" placeholder="Факультет*" class="input input-fac">
+
+        <input type="date" placeholder="Дата рождения*" class="input input-date">
+
+        <input type="text" placeholder="Годы обучения*" class="input input-study">
+
+        <button type="submit" class="btn btn-primary submit">Добавить студента</button>
+        <div class="error-name">Некорректно указано ФИО</div>
+        <div class="error-date">Недопустимая дата рождения</div>
+        <div class="error-study">Недопустимая дата обучения</div>
+
+    </form>
+    <div class="table-container">
+        <div class="filter-container">
+            <input class="filter-input filter-name" placeholder="Поиск по имени" type="text">
+            <input class="filter-input filter-fac" placeholder="Поиск по факультету" type="text">
+            <input class="filter-input filter-date" placeholder="Поиск по дате рождения" type="text">
+            <input class="filter-input filter-study" placeholder="Поиск по срокам обучения" type="text">
+        </div>
+        <table class="table table-striped">
+            <thead class="thead">
+                <th class="th name">Ф.И.О.</th>
+                <th class="th fac">Факультет</th>
+                <th class="th date">Д.р. и возраст</th>
+                <th class="th study">Годы обучения</th>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

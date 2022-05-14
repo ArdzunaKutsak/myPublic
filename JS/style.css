@@ -1,0 +1,183 @@
+.choices,
+.is-open {
+    margin-left: 50px;
+    height: 39px;
+    width: 176px;
+}
+
+.is-open .choices__inner {
+    border: 1px solid #CCB26E;
+}
+
+.choices__inner {
+    min-height: 39px;
+    line-height: 12px;
+    padding: 10px 12px;
+    border-radius: 10px !important;
+    z-index: 1000;
+    background-color: white;
+}
+
+.choices__placeholder {
+    opacity: 1;
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 10px;
+}
+
+#choices--select-tf-item-choice-5 {
+    display: none;
+}
+
+.choices[data-type*=select-one]::after {
+    margin: 0;
+    content: url(/img/selectArrow.svg);
+    border-style: none;
+    right: 25px;
+    top: 25%;
+}
+
+.choices[data-type*=select-one].is-open::after {
+    margin: 0;
+    content: url(/img/openSelect.svg)
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    margin-top: 0;
+    border-left: 1px solid #CCB26E !important;
+    border-right: 1px solid #CCB26E !important;
+    border-bottom: 1px solid #CCB26E !important;
+    border-top: none !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: visible;
+}
+
+.choices__list {
+    overflow: visible;
+}
+
+.is-open .choices__inner::after {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 0;
+    content: '';
+    height: 20px;
+    width: 176px;
+    background-color: white;
+    border-left: 1px solid #CCB26E;
+    border-right: 1px solid #CCB26E;
+    z-index: -1;
+}
+
+div[id*='item-choice-1'] {
+    display: none !important;
+}
+
+.scroll {
+    margin-left: 50px;
+    padding: 20px 30px;
+    width: 400px;
+    line-height: 24px;
+    height: 310px;
+    background-color: white;
+}
+
+
+/* .simplebar-scrollbar {
+    border-radius: 5px;
+    background-color: #CCB26E;
+} */
+
+.simplebar-scrollbar:before {
+    background: #CCB26E;
+}
+
+.form {
+    margin-left: 50px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    padding: 38px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.input {
+    margin-bottom: 31px;
+    padding: 24px 20px;
+    height: 60px;
+    opacity: 1;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #FF5C00;
+}
+
+.submit {
+    margin-top: 16px;
+    padding: 18.5px 53px;
+    width: 50%;
+    color: white;
+    background-color: #FF5C00;
+    border-radius: 10px;
+    border: #FF5C00;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.just-validate-error-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF5C00 !important;
+}
+
+.label-input {
+    margin-left: 20px;
+    /* margin-bottom: 5px; */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.label-input .input {
+    margin-top: 4px;
+    margin-left: -20px;
+    margin-bottom: 14px;
+    padding: 24px 20px;
+    height: 60px;
+    opacity: 1;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #FF5C00;
+}
+
+.toolP {
+    margin: 0;
+    margin-left: 50px;
+    width: 375px;
+    padding: 20px 29px;
+    padding-right: 78px;
+    line-height: 24px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.tooltipMy {
+    margin-left: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/img/tooltip.svg) center center no-repeat;
+    background-clip: contain;
+    transform: translateY(2px);
+    border: none;
+}
+
+.tooltipMy:hover {
+    background: url(/img/tooltiphover.svg) center center no-repeat;
+}
