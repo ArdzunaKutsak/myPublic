@@ -1,0 +1,115 @@
+:root {
+    --black: #333333;
+    --dark: #444555;
+    --gray66: #666;
+    --yellow: #eeee02;
+    --green: #78ee02;
+    --orange: #ee7802;
+    --another-green: #02ee02;
+    --biruza: #02eeee;
+    --compliment: #0202ee;
+}
+
+body {
+    background-color: var(--dark);
+    position: relative;
+}
+
+.lorem {
+    color: var(--yellow)
+}
+
+.drop-letter {
+    color: var(--green);
+    position: absolute;
+    animation: drop 10s linear infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(95vh);
+    }
+}
+
+
+/* .drop-letter {
+    transform: translateY(1000px);
+} */
+
+.audio {
+    display: none;
+}
+
+.play {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 45%;
+    top: 45%;
+}
+
+.play:hover,
+.play:active {
+    opacity: 0.8;
+}
+
+.play:focus {
+    outline: none;
+}
+
+.man {
+    position: relative;
+}
+
+.body,
+.head,
+.hand,
+.foot {
+    position: absolute;
+    background-color: var(--black);
+    outline: 1px solid var(--gray66);
+}
+
+.head {
+    width: 30px;
+    height: 40px;
+    left: 20px;
+    top: -40px;
+}
+
+.body {
+    height: 100px;
+    width: 70px;
+}
+
+.hand {
+    height: 120px;
+    width: 25px;
+}
+
+.left-hand {
+    left: -10px;
+}
+
+.right-hand {
+    right: -74px;
+}
+
+.foot {
+    height: 120px;
+    width: 25px;
+}
+
+.left-foot {
+    left: 1px;
+    bottom: -207px;
+}
+
+.right-foot {
+    right: -63px;
+    bottom: -207px;
+}
