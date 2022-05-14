@@ -1,0 +1,71 @@
+.controls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.karmaValue {
+    margin: 0 5px;
+}
+
+.karmaCounter {
+    display: flex;
+}
+
+.up,
+.down {
+    position: relative;
+    z-index: 1;
+}
+
+.up:hover svg path {
+    fill: var(--green);
+}
+
+.down:hover svg path {
+    fill: var(--orange);
+}
+
+.down {
+    position: relative;
+    z-index: 1;
+}
+
+.commentsButton {
+    display: flex;
+    align-items: normal;
+}
+
+.commentsButton * {
+    color: var(--grayC4);
+}
+
+.commentsNumber {
+    padding: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.saveButton {
+    margin-left: 15px;
+}
+
+@media (min-width: 1024px) {
+    .controls {
+        margin-left: auto;
+    }
+    .actions,
+    .commentsButton {
+        display: none;
+    }
+    .karmaCounter {
+        flex-direction: column;
+    }
+    .karmaValue {
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+}

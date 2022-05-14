@@ -1,0 +1,10 @@
+.layout {
+    margin: 0 auto;
+    margin: 40px;
+}
+
+@media (max-width: 1023px) {
+    .layout {
+        margin: 0;
+    }
+}

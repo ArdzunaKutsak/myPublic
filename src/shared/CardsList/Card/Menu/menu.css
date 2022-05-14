@@ -1,0 +1,34 @@
+.menu {
+    margin-left: auto;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px;
+    background-color: transparent;
+    border: 0;
+    top: 12px;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+.menu:active,
+.menu:hover {
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        transform: rotate(0deg);
+        right: 110px;
+        top: 40px;
+    }
+}
+
+@media (min-width: 1540px) {
+    .menu {
+        top: 60px;
+    }
+}

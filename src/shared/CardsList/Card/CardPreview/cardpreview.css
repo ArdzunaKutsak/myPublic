@@ -1,0 +1,12 @@
+    .preview {
+        height: 178px;
+        width: 100%;
+    }
+    
+    @media (min-width: 1024px) {
+        .preview {
+            order: -1;
+            width: 190px;
+            height: 107px;
+        }
+    }

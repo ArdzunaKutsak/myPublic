@@ -1,0 +1,241 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 0;
+}
+
+.card:hover {
+    outline: 1px solid var(--grayF4);
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex-direction: row;
+        padding: 0px 40px;
+    }
+}
+
+@media (min-width:1540px) {
+    .card {
+        padding: 20px 25px 20px 72px;
+    }
+}
+
+
+/* .card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card>* {
+    flex: 1 1 100%;
+} */
+
+
+/* .card {
+    display: flex;
+    height: 148px;
+}
+
+.cardContainer {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 40px;
+    padding-left: 20px;
+}
+
+.cardContainer>* {
+    flex: 1 1 100%;
+}
+
+.desktopPreview img {
+    width: 190px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.metaData {
+    display: flex;
+}
+
+.userName {
+    margin: 0 10px;
+    color: var(--orange);
+
+}
+
+.createAt {
+    order: -1;
+    margin-right: 5px;
+}
+
+.createAt,
+.createAt * {
+    color: var(--gray99);
+}
+
+.title {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    margin: 0;
+    padding: 7px 0 0;
+    margin-bottom: 10px;
+    order: -1;
+}
+
+.postLink {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.preview {
+    max-height: 178px;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menuButton {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px;
+    background-color: transparent;
+    border: 0;
+}
+
+.menuButton:active,
+.menuButton:hover {
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.karmaValue {
+    margin: 0 5px;
+}
+
+.karmaCounter {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentsButton {
+    display: none;
+    align-items: normal;
+}
+
+.commentsButton * {
+    color: var(--grayC4);
+}
+
+.commentsNumber {
+    padding: 0 0 0 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.actions {
+    display: none;
+}
+
+.actions,
+.shareButton,
+.saveButton {
+    height: 20px;
+}
+
+.saveButton {
+    margin-left: 15px;
+}
+
+.preview {
+    display: none;
+}
+
+.desktopPreview {
+    padding: 20px 0 20px 60px;
+}
+
+.menu {
+    display: none;
+}
+
+.menuControls {
+    margin-right: 25px;
+}
+
+@media (max-width: 1024px) {
+    .publishedLabel {
+        display: none;
+    }
+    .desktopPreview {
+        display: none;
+    }
+    .cardContainer {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .preview {
+        display: block;
+    }
+    .actions {
+        display: block;
+    }
+    .commentsButton {
+        display: flex;
+    }
+    .controls {
+        padding: 10px 20px;
+    }
+    .karmaCounter {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    .menuButton {
+        top: 40;
+        right: 24px;
+        transform: rotate(90deg);
+        position: absolute;
+    }
+    .controls {
+        justify-content: space-between;
+    }
+    .title {
+        order: 2;
+    }
+    .createAt {
+        order: 1;
+    }
+} */
