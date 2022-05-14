@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.city-ground {
+    position: relative;
+    height: 80px;
+}
+
+
+/* .city {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 3px dashed #666666;
+    background-color: #aaaaaa;
+    animation: slowRotate 30s infinite linear;
+    z-index: -1;
+} */
+
+.city-army {
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+@keyframes slowRotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.game {
+    position: relative;
+}
+
+.line-0 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.line-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drag {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+}
+
+.drag-move {
+    transition: all 1.5s linear;
+}
+
+.player-city {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.player-city .city-border {
+    background-color: rgb(71, 156, 37);
+    border: 5px dashed darkgreen;
+    animation: slowRotate 10s infinite linear;
+}
+
+.city {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.empty-city .city-border {
+    border: 5px dashed #666666;
+    background-color: #aaaaaa;
+    animation: slowRotate 30s infinite linear;
+}
+
+.enemy-city .city-border {
+    border: 5px dashed #5f1818;
+    background-color: #bd1f1f;
+    animation: slowRotate 10s infinite linear;
+}
+
+.city-border {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+}
+
+.area {
+    left: -7px;
+    top: -7px;
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background-color: transparent;
+    border: 4px solid green;
+    border-radius: 41px;
+    filter: blur(3px);
+    display: none;
+}
+
+.city-army {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    line-height: 80px;
+    text-align: center;
+}
+
+.row-1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-0 {
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: center;
+}
+
+.line-00 {
+    position: absolute;
+    z-index: 1;
+}
+
+.svg-line {
+    left: 0;
+    top: 0;
+    position: absolute;
+    overflow: visible;
+}
+
+.city {
+    position: absolute;
+}
+
+.city-00 {
+    left: 40vw;
+    top: 15vh;
+}
+
+.city-01 {
+    left: 30vw;
+    top: 30vh;
+}
+
+.city-02 {
+    left: 50vw;
+    top: 30vh;
+}
+
+.city-03 {
+    left: 40vw;
+    top: 45vh;
+}
+
+.city-04 {
+    left: 30vw;
+    top: 60vh;
+}
+
+.city-05 {
+    left: 55vw;
+    top: 60vh;
+}
+
+.updates {
+    display: flex;
+    position: absolute;
+}
+
+.defupdate {
+    cursor: pointer;
+    position: fixed;
+    background-color: blueviolet;
+    bottom: 0;
+    left: 600px;
+    width: 80px;
+    height: 40px;
+}
+
+.speedupdate {
+    cursor: pointer;
+    position: fixed;
+    background-color: #bd1f1f;
+    bottom: 0;
+    right: 600px;
+    width: 80px;
+    height: 40px;
+}
