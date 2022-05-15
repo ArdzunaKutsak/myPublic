@@ -1,0 +1,23 @@
+.chest {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    left: -7px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 70px solid var(--biruza);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.pelvis {
+    position: absolute;
+    width: 60px;
+    border-bottom: 40px solid var(--orange);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    top: 70px;
+    left: -2px;
+}

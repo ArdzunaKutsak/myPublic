@@ -1,0 +1,64 @@
+.head {
+    width: 30px;
+    height: 40px;
+    left: 17px;
+    top: -40px;
+}
+
+.neck {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-bottom: 20px solid var(--biruza);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.skull {
+    position: absolute;
+    width: 35px;
+    height: 45px;
+    background: red;
+    -moz-border-radius: 17px /22px;
+    -webkit-border-radius: 17px / 22px;
+    border-radius: 17px / 22px;
+    top: -15px;
+    left: -7px;
+    transform-origin: 17px 35px;
+    transition: transform 1s ease;
+}
+
+.head:hover .skull {
+    transform: rotate(90deg);
+}
+
+.hair {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    background-color: var(--orange);
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    left: -5px;
+    top: -8px;
+}
+
+.hair-left {
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: var(--orange);
+    border-bottom-left-radius: 22px;
+    left: 0px;
+    top: 20px;
+}
+
+.hair-right {
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: var(--orange);
+    border-bottom-right-radius: 22px;
+    right: 0px;
+    top: 20px;
+}

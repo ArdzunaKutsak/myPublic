@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const audio = document.querySelector('.audio');
     const body = document.body;
     loremText.textContent = '';
-
+    const width = window.screen.availWidth - 10
 
     play.addEventListener('click', function() {
         if (document.getElementsByTagName('audio').length === 0) {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const drop = document.createElement('div');
                 drop.classList.add('drop-letter');
                 drop.textContent = secondList.shift();
-                drop.style.left = Math.random() * 1360 + 'px'
+                drop.style.left = Math.random() * width + 'px'
                 body.prepend(drop);
 
             }, 500)

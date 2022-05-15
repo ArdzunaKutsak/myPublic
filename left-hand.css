@@ -1,26 +1,92 @@
-.hand-container {
-    position: relative;
-}
-
-.brachium,
-.arm,
-.wrist {
+.left-brachium,
+.left-arm,
+.left-wrist {
     position: absolute
 }
 
 .brachium {
     background-color: var(--biruza);
     position: absolute;
-    height: 60px;
+    height: 70px;
     width: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 5px;
     transform: rotate(0deg);
-    transform-origin: 18px 15px;
     transition: transform 1s ease;
 }
 
-.brachium:hover {
+.arm {
+    position: absolute;
+    background-color: black;
+    position: absolute;
+    height: 60px;
+    width: 25px;
+    top: 50px;
+    transition: transform 1s ease;
+}
+
+.wrist {
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 45px;
+    transition: transform 1s ease;
+}
+
+.left-brachium {
+    transform-origin: 18px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+}
+
+.right-brachium {
+    transform-origin: 10px 13px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+}
+
+.left-arm {
+    transform-origin: 15px 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.right-arm {
+    transform-origin: 10px 10px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.left-wrist {
+    transform-origin: 15px 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-wrist {
+    transform-origin: 10px 10px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left-brachium:hover,
+.left-brachium:hover .left-arm,
+.left-brachium:hover .left-wrist {
     transform: rotate(90deg);
+}
+
+.right-brachium:hover,
+.right-brachium:hover .right-arm,
+.right-brachium:hover .right-wrist {
+    transform: rotate(-90deg);
 }

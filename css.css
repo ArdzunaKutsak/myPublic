@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root {
     --black: #333333;
     --dark: #444555;
@@ -10,16 +11,25 @@
     --compliment: #0202ee;
 }
 
+html {
+    font-family: 'Josefin Sans', serif;
+}
+
 body {
+    width: 99vw;
+    height: 95vh;
     background-color: var(--dark);
     position: relative;
 }
 
 .lorem {
-    color: var(--yellow)
+    font-weight: 500;
+    color: var(--yellow);
 }
 
 .drop-letter {
+    font-size: 30px;
+    font-weight: 700;
     color: var(--green);
     position: absolute;
     animation: drop 10s linear infinite;
@@ -30,7 +40,7 @@ body {
         transform: translateY(-10vh);
     }
     100% {
-        transform: translateY(95vh);
+        transform: translateY(90vh);
     }
 }
 
@@ -65,20 +75,17 @@ body {
     position: relative;
 }
 
+.container {
+    position: relative;
+}
+
 .body,
 .head,
 .hand,
 .foot {
     position: absolute;
-    background-color: var(--black);
-    outline: 1px solid var(--gray66);
-}
-
-.head {
-    width: 30px;
-    height: 40px;
-    left: 20px;
-    top: -40px;
+    /* background-color: var(--black);
+    outline: 1px solid var(--gray66); */
 }
 
 .body {
