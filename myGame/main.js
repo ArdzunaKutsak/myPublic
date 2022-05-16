@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameField = document.querySelector('.game')
     const body = document.body;
     body.append(gameField);
-    const defButton = document.querySelector('.defupgrade');
-    const speedButton = document.querySelector('.speedupgrade');
+    const defButton = document.querySelector('.defupdate');
+    const speedButton = document.querySelector('.speedupdate');
 
     // let currentCity;
     // let startCity;
@@ -49,22 +49,14 @@ document.addEventListener("DOMContentLoaded", function() {
         return isPath
     }
 
-    function Timeout(elem, timer) {
-        let timeout = 1000;
-        if (elem.classList.value.split(' ').includes('empty-city')) timeout = 2000;
-        elem.children[1].textContent = parseInt(elem.children[1].textContent) + 1;
-        timer(elem);
-        return timeout;
-
-    }
-
     function setArmyCounter() {
         document.querySelectorAll(`.city`).forEach(elem => {
             dragArmy(elem);
             let timeout = 1000;
             let timer = setTimeout(function Timeout() {
                 if (elem.classList.value.split(' ').includes('empty-city')) timeout = 2000;
-                else if (elem.classList.value.split(' ').includes('player-city')) timeout = 1000;
+                else if (elem.classList.value.split(' ').includes('speed')) timeout = 700;
+                else timeout = 1000;
                 elem.children[1].textContent = parseInt(elem.children[1].textContent) + 1;
                 timer = setTimeout(Timeout, timeout);
             }, timeout)
@@ -72,11 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     setArmyCounter()
 
+
+
     function setDragStartPosition(drag, startCity, startPoint) {
-        document.querySelectorAll('.area').forEach((e) => {
-            e.style.display = 'none';
-        })
-        startCity.querySelector('.area').style.display = 'block';
+
         // let drag = Drag();
         let x = startCity.getBoundingClientRect().x;
         let y = startCity.getBoundingClientRect().y;
@@ -105,36 +96,71 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var click = 0
 
-    function displayUpgrades(click) {
+    function ableUpgrades(city) {
+        if (!city.classList.contains('speed')) {
+            speedButton.disabled = false;
+        }
+        if (!city.classList.contains('def')) {
+            defButton.disabled = false;
+        }
+    }
 
+    function disableUpgrades() {
+        defButton.disabled = true;
+        speedButton.disabled = true;
+    }
+
+    function ableArea(startCity) {
+        disableArea()
+        startCity.querySelector('.area').style.display = 'block';
+    }
+
+    function disableArea() {
+        document.querySelectorAll('.area').forEach((e) => {
+            e.style.display = 'none';
+        })
     }
 
     function dragArmy(from) {
 
         from.addEventListener("mouseup", function startFunc(event) {
             let startCity = event.path[1];
-            let drag = Drag()
+            disableArea()
+            disableUpgrades();
+
+            function pressSpeed() {
+                if (!startCity.classList.contains('speed') && startCity.children[1].textContent >= 10) {
+                    startCity.children[1].textContent = startCity.children[1].textContent - 10;
+                    startCity.classList.add('speed')
+                }
+                disableUpgrades();
+                ableUpgrades(startCity);
+            }
 
             if (startCity.classList.value.split(' ').includes('player-city')) {
-
-                console.log()
+                speedButton.addEventListener('mousedown', pressSpeed)
+                ableUpgrades(startCity);
+                ableArea(startCity)
                 if (click === 0) {
-                    click = 1;
+
+                    let drag = Drag()
                     setDragStartPosition(drag, startCity, event.path[0]);
                     body.addEventListener('mousedown', function(e) {
-                        console.log('here')
+
                         let endCity = e.path[1];
                         if (startCity !== endCity && endCity.classList.value.split(' ').includes('city') && isPath(startCity, endCity)) {
-                            console.log(isPath(startCity, endCity))
                             setDragEndPosition(drag, endCity)
+                            click = 1;
+                            return
                         } else {
+
                             startCity.children[1].textContent = parseInt(startCity.children[1].textContent) + parseInt(drag.textContent)
                             drag.remove()
                         }
 
                     }, { once: true })
 
-                    return
+
                 }
                 click = 0;
             }
@@ -148,8 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
         def.children[1].textContent -= army.textContent;
         if (def.children[1].textContent < 0) {
             def.children[1].textContent = Math.abs(parseInt(def.children[1].textContent));
-            def.classList.remove('empty-city');
-            def.classList.remove('enemy-city');
+            def.classList.remove('empty-city', 'enemy-city', 'speed', 'def');
             if (who === 'player') {
                 def.classList.add('player-city');
                 return

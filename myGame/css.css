@@ -217,3 +217,7 @@ body {
     width: 80px;
     height: 40px;
 }
+
+.speed .city-border {
+    animation: slowRotate 5s infinite linear;
+}
