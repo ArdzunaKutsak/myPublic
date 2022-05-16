@@ -7,6 +7,7 @@
 
 .neck {
     position: absolute;
+    top: 2px;
     height: 20px;
     width: 20px;
     border-bottom: 20px solid var(--biruza);
@@ -61,4 +62,130 @@
     border-bottom-right-radius: 22px;
     right: 0px;
     top: 20px;
+}
+
+.skull {
+    animation: skull .5s 10s infinite linear;
+}
+
+.skull-2 {
+    animation: skull-2 10s linear;
+}
+
+.hair {
+    animation: hair .5s infinite linear;
+}
+
+@keyframes skull {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes skull-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    3% {
+        transform: rotate(15deg);
+    }
+    6% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(15deg);
+    }
+    13% {
+        transform: rotate(0deg);
+    }
+    16% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    23% {
+        transform: rotate(15deg);
+    }
+    26% {
+        transform: rotate(15deg);
+    }
+    29% {
+        transform: rotate(0deg);
+    }
+    32% {
+        transform: rotate(15deg);
+    }
+    35% {
+        transform: rotate(0deg);
+    }
+    38% {
+        transform: rotate(15deg);
+    }
+    41% {
+        transform: rotate(0deg);
+    }
+    44% {
+        transform: rotate(15deg);
+    }
+    47% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    53% {
+        transform: rotate(0deg);
+    }
+    56% {
+        transform: rotate(15deg);
+    }
+    59% {
+        transform: rotate(15deg);
+    }
+    62% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    78% {
+        transform: rotate(0deg);
+    }
+    81% {
+        transform: rotate(15deg);
+    }
+    84% {
+        transform: rotate(15deg);
+    }
+    87% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(15deg);
+    }
+    93% {
+        transform: rotate(0deg);
+    }
+    96% {
+        transform: rotate(15deg);
+    }
+    99% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes hair {
+    0% {
+        transform: skewX(0deg)
+    }
+    50% {
+        transform: skew(-10deg)
+    }
 }

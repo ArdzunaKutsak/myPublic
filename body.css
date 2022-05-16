@@ -21,3 +21,317 @@
     top: 70px;
     left: -2px;
 }
+
+.man {
+    animation: man-dance 50s linear;
+}
+
+@keyframes man-dance {
+    1% {
+        left: 0px;
+        top: 0px;
+        transform: scale(1.01);
+    }
+    2% {
+        top: 20px;
+        transform: scale(1);
+    }
+    3% {
+        top: 0px;
+        transform: scale(1.01);
+    }
+    4% {
+        top: 20px;
+        transform: scale(1);
+    }
+    5% {
+        top: 0px;
+        left: 100px;
+        transform: scale(1.01);
+    }
+    6% {
+        transform: scale(1);
+    }
+    7% {
+        transform: scale(1.01);
+    }
+    8% {
+        transform: scale(1);
+    }
+    9% {
+        transform: scale(1.01);
+    }
+    10% {
+        transform: scale(1);
+    }
+    11% {
+        transform: scale(1.01);
+    }
+    12% {
+        transform: scale(1);
+    }
+    13% {
+        transform: scale(1.01);
+    }
+    14% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.01);
+    }
+    16% {
+        transform: scale(1);
+    }
+    17% {
+        transform: scale(1.01);
+    }
+    18% {
+        transform: scale(1);
+    }
+    19% {
+        transform: scale(1.01);
+    }
+    20% {
+        transform: scale(1);
+    }
+    21% {
+        transform: scale(1.01);
+    }
+    23% {
+        transform: scale(1);
+    }
+    24% {
+        transform: scale(1.01);
+    }
+    25% {
+        transform: scale(1);
+    }
+    26% {
+        transform: scale(1.01);
+    }
+    27% {
+        transform: scale(1);
+    }
+    28% {
+        transform: scale(1.01);
+    }
+    29% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.01);
+    }
+    31% {
+        transform: scale(1);
+    }
+    32% {
+        transform: scale(1.01);
+    }
+    33% {
+        transform: scale(1);
+    }
+    34% {
+        transform: scale(1.01);
+    }
+    35% {
+        transform: scale(1);
+    }
+    36% {
+        transform: scale(1.01);
+    }
+    37% {
+        transform: scale(1);
+    }
+    38% {
+        transform: scale(1);
+    }
+    39% {
+        transform: scale(1.01);
+    }
+    40% {
+        transform: scale(1);
+    }
+    41% {
+        transform: scale(1.01);
+    }
+    42% {
+        transform: scale(1);
+    }
+    43% {
+        transform: scale(1.01);
+    }
+    44% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1.01);
+    }
+    46% {
+        transform: scale(1);
+    }
+    47% {
+        transform: scale(1.01);
+    }
+    48% {
+        transform: scale(1);
+    }
+    49% {
+        transform: scale(1.01);
+    }
+    50% {
+        transform: scale(1);
+    }
+    51% {
+        transform: scale(1.01);
+    }
+    52% {
+        transform: scale(1);
+    }
+    53% {
+        transform: scale(1.01);
+    }
+    54% {
+        transform: scale(1);
+    }
+    55% {
+        transform: scale(1.01);
+    }
+    56% {
+        transform: scale(1);
+    }
+    57% {
+        transform: scale(1.01);
+    }
+    58% {
+        transform: scale(1);
+    }
+    59% {
+        transform: scale(1.01);
+    }
+    60% {
+        transform: scale(1);
+    }
+    61% {
+        transform: scale(1.01);
+    }
+    62% {
+        transform: scale(1);
+    }
+    63% {
+        transform: scale(1.01);
+    }
+    64% {
+        transform: scale(1);
+    }
+    65% {
+        transform: scale(1.01);
+    }
+    66% {
+        transform: scale(1);
+    }
+    67% {
+        transform: scale(1.01);
+    }
+    68% {
+        transform: scale(1);
+    }
+    69% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.01);
+    }
+    71% {
+        transform: scale(1);
+    }
+    72% {
+        transform: scale(1.01);
+    }
+    73% {
+        transform: scale(1);
+    }
+    74% {
+        transform: scale(1.01);
+    }
+    75% {
+        transform: scale(1);
+    }
+    76% {
+        transform: scale(1.01);
+    }
+    77% {
+        transform: scale(1);
+    }
+    78% {
+        transform: scale(1.01);
+    }
+    79% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.01);
+    }
+    81% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.01);
+    }
+    83% {
+        transform: scale(1);
+    }
+    84% {
+        transform: scale(1.01);
+    }
+    85% {
+        transform: scale(1);
+    }
+    86% {
+        transform: scale(1.01);
+    }
+    87% {
+        transform: scale(1);
+    }
+    88% {
+        transform: scale(1.01);
+    }
+    89% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.01);
+    }
+    91% {
+        transform: scale(1);
+    }
+    92% {
+        transform: scale(1.01);
+    }
+    93% {
+        transform: scale(1);
+    }
+    94% {
+        transform: scale(1.01);
+    }
+    95% {
+        transform: scale(1);
+    }
+    96% {
+        transform: scale(1.01);
+    }
+    35% {
+        transform: scale(1);
+    }
+    97% {
+        transform: scale(1.01);
+    }
+    98% {
+        transform: scale(1);
+    }
+    99% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

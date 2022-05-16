@@ -10,7 +10,7 @@
     height: 70px;
     width: 25px;
     transform: rotate(0deg);
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
 }
 
 .arm {
@@ -20,7 +20,7 @@
     height: 60px;
     width: 25px;
     top: 50px;
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
 }
 
 .wrist {
@@ -30,7 +30,7 @@
     height: 25px;
     width: 25px;
     top: 45px;
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
 }
 
 .left-brachium {
@@ -89,4 +89,77 @@
 .right-brachium:hover .right-arm,
 .right-brachium:hover .right-wrist {
     transform: rotate(-90deg);
+}
+
+.left-brachium {
+    animation: dance 60s linear;
+}
+
+@keyframes dance {
+    10% {
+        transform: rotate(45deg);
+    }
+    20% {
+        transform: rotate(90deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    31% {
+        transform: rotate(180deg);
+    }
+    32% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(180deg);
+    }
+    34% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(180deg);
+    }
+    36% {
+        transform: rotate(0deg);
+    }
+    37% {
+        transform: rotate(180deg);
+    }
+    38% {
+        transform: rotate(0deg);
+    }
+    39% {
+        transform: rotate(180deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    41% {
+        transform: rotate(360deg);
+    }
+    42% {
+        transform: rotate(0deg);
+    }
+    43% {
+        transform: rotate(360deg);
+    }
+    44% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(360deg);
+    }
+    46% {
+        transform: rotate(0deg);
+    }
+    47% {
+        transform: rotate(360deg);
+    }
+    48% {
+        transform: rotate(0deg);
+    }
+    49% {
+        transform: rotate(360deg);
+    }
 }

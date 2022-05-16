@@ -57,7 +57,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     left: 45%;
     top: 45%;
 }
