@@ -1,0 +1,31 @@
+.container {
+    padding: 15px 61px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.btn-bar {
+    margin-left: auto;
+    display: flex;
+}
+.btn-bar li{
+    margin-right: 12px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 11px 40px;
+    background-color: var(--white);
+    color: var(--MAXblack);
+    cursor: pointer;
+}

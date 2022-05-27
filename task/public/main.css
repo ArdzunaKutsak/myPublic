@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+   
+}
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    width:1116px
+}
