@@ -1,0 +1,18 @@
+.container {
+    padding: 50px;
+}
+
+.body {
+    margin-top: 20px;
+    
+}
+.wrapper {
+    text-align: center;
+}
+.commentButton {
+    padding: 15px 30px;
+    background-color: var(--MAXgay);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+}

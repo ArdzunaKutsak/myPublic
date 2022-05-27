@@ -1,0 +1,17 @@
+.container {
+    margin-top: 20px;
+    flex: 0 0 30%;
+    height: 183px;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    border: 2px solid var(--MAXblack);
+}
+
+.body,
+.email {
+    margin-top: 15px;
+}
+.email,
+.name {
+    font-weight: 600;
+}

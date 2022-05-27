@@ -1,0 +1,9 @@
+.container {
+    padding: 36px 53px;
+    background-color: var(--white);
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

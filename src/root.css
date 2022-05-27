@@ -1,0 +1,20 @@
+:root {
+    --MAXblack: #000000;
+    --black: #101010;
+    --white: #ffffff;
+    --MAXgay: #63B4EE;
+    --gay: #aad0eb;
+    --gray: rgba(0, 0, 0, 0.41);
+}
+button {
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+button:hover {
+    opacity:0.8
+}
+button:active {
+    transform: scale(0.98);
+}
