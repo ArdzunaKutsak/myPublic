@@ -8,9 +8,9 @@ function UserCard({user}) {
   const fullName = user.name.split(' ');
   const navigate = useNavigate();
   return (
-    <li >
+    <li className={styles.card}>
       <button className={styles.container} onClick={()=>navigate(USER_ROUTE + '/' + user.id)}>
-        <img className={styles.ava} src={icon} alter='awd' />
+        <img className={styles.ava} src={icon} />
         <div className={styles.name}>{fullName[0]}</div>
         <div className={styles.surname}>{fullName[1]}</div>
       </button>

@@ -2,11 +2,10 @@ import { observer } from 'mobx-react-lite';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import PostCard from '../components/PostCard/PostCard';
-import {getOneUser, getPosts} from '../http/userAPI'
-import { POST_LIST_ROUTE } from '../utils/consts';
+import {  getPosts} from '../http/userAPI'
 import styles from './css/postslist.module.css'
 
-const PostList = () => {
+const PostList = observer(() => {
   const {id} = useParams() 
   const [posts, setPosts] = useState(null)
   useEffect(()=>{
@@ -18,6 +17,6 @@ const PostList = () => {
       {posts.map(post=><PostCard key={post.id} post={post} />)}
     </ul> 
   );}
-}
+})
 
 export default PostList;

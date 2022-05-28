@@ -1,0 +1,8 @@
+.btn {
+    background-color: var(--MAXgay);
+    padding: 5px 30px;
+    background-color: var(--MAXgay);
+    font-size: var(--buttonText);
+    font-weight: 500;
+    color: var(--white);
+}

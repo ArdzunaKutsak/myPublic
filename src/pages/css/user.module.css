@@ -7,7 +7,6 @@
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 .item {
@@ -15,12 +14,12 @@
     margin-bottom: 0px;
     flex: 35% 1 1;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--largeText);
     outline: 2px solid var(--MAXblack);
     color: var(--MAXblack);
 }
 .item:first-child {
-    font-size: 36px;
+    font-size: var(--header);
     flex: 100%;
 }
 
@@ -37,36 +36,34 @@
 .btn {
     padding: 20px;
     font-weight: 600;
-    font-size: 11px;
+    font-size: var(--buttonSmallText);
     line-height: 15px;
     color: var(--white);
     background-color: var(--MAXblack);
     border:none;
 }
 .postsBar {
-    display: flex;
-    justify-content: space-between;
-}
-.posts {
     margin-left: 50px;
     margin-top: 20px;
-}
-.postLink {
     margin-right: 50px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posts {
+    font-size: var(--header);  
+}
+.postLink {  
     font-weight: 600;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: var(--header);
     color: var(--MAXgay);
 
 }
 .postsContainer {
-    padding: 10px;
-    /* display: flex; */
-    border-bottom: 1px solid var(--MAXblack);
+    margin: 0px 50px;
 }
 .postsList {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 }

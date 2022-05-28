@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Modal from 'react-bootstrap/Modal'
 import {Button, Form, } from 'react-bootstrap'
-import styles from './addcomment.css'
+import styles from './addcomment.module.css'
 import {sendComment} from '../../http/userAPI'
 
 const AddComment = ({show, onHide}) => {
@@ -60,7 +60,7 @@ const AddComment = ({show, onHide}) => {
           </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button type="submit" onClick={send} size='lg' className={styles.btn} variant={'outline-light'} >Send</Button>
+        <button type="submit" onClick={send}  className={styles.btn}>Send</button>
       </Modal.Footer>
     </Modal>
     )}

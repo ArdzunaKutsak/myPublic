@@ -8,11 +8,17 @@
 }
 
 .logo {
+    text-decoration: none;
     font-weight: 700;
-    font-size: 28px;
+    font-size: var(--logoText);
     text-transform: uppercase;
     color: var(--white);
 }
+.logo:hover {
+    color: var(--white);
+    opacity: 0.8;
+}
+
 .btn_bar {
     margin-left: auto;
     display: flex;
@@ -28,4 +34,5 @@
     background-color: var(--white);
     color: var(--MAXblack);
     cursor: pointer;
+    font-size: var(--buttonText);
 }

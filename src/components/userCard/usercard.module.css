@@ -1,18 +1,21 @@
 .container {
     padding: 40px;
     margin-bottom: 20px;
-    display: flex;
+  
     height: 300px;
-    width: 280px;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     background: linear-gradient(45deg, var(--MAXgay), var(--gay));;
     border-radius: 20px;
     border: none;
     cursor: pointer;
 }
-
-
+.card{
+    flex: 0 0 calc(33% - 30px);
+   
+}
+.card:not(:nth-child(3n)){
+    margin-right: 41px;
+}
 .name {
     margin-top: 20px;
 }
@@ -21,7 +24,7 @@
 }
 .name, .surname {
     font-weight: 500;
-    font-size: 35px;
+    font-size: var(--logoText);
     line-height: 40px;
     color: var(--MAXblack);
 }

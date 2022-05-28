@@ -1,25 +1,24 @@
-import React, {useContext,createContext} from 'react'
-import {getUsers} from './http/userAPI'
+import React, {useContext, useEffect} from 'react'
+import { Context } from './index';
 import { observer } from "mobx-react-lite";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 import NavBar from './components/NavBar/NavBar';
 import './root.css';
-import './main.css';
 
 
-function App() {
 
-  const {userData} = createContext(null) 
-
-  return (
-    <BrowserRouter>
-      <div>
-        <NavBar />
-        <AppRouter />
-      </div>
-    </BrowserRouter>
-  );
-}
+const App = observer(() =>{
+  const {visualVersion} = useContext(Context)
+  useEffect(()=>{
+    visualVersion.setVisualVersion(visualVersion.largeVersion)
+  },[visualVersion.largeVersion])
+    return (
+      <BrowserRouter>  
+          <NavBar />
+          <AppRouter />
+      </BrowserRouter>
+    );
+})
 
 export default App;

@@ -2,25 +2,22 @@
     text-align: start;
 }
 .container {
-    margin-top: 20px;
     flex: 0 0 30%;
-    height: 143px;
+    min-height: 143px;
     padding: 15px 35px;
     margin-bottom: 20px;
     border: 2px solid var(--MAXblack);
 }
 .title {
     font-weight: 700;
-    font-size: 17px;
-    line-height: 23px;
+    font-size: var(--largeText);
     text-transform: capitalize;
     color: var(--black)
 }
 .body {
     margin-top: 5px;
     width:250px;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: var(--usualText);
     color: var(--gray);
     white-space: nowrap;
     overflow: hidden;

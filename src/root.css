@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 :root {
     --MAXblack: #000000;
     --black: #101010;
@@ -5,6 +7,13 @@
     --MAXgay: #63B4EE;
     --gay: #aad0eb;
     --gray: rgba(0, 0, 0, 0.41);
+    --usualText: 12px;
+    --header: 35px;
+    --largeText: 18px;
+    --buttonText: 14px;
+    --buttonSmallText: 11px;
+    --logoText: 28px;
+    --body: 1116px;
 }
 button {
     cursor: pointer;
@@ -17,4 +26,28 @@ button:hover {
 }
 button:active {
     transform: scale(0.98);
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    width:var(--body)
 }

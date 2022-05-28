@@ -5,8 +5,10 @@ import PostCard from '../components/PostCard/PostCard';
 import {getOneUser, getPosts} from '../http/userAPI'
 import { POST_LIST_ROUTE } from '../utils/consts';
 import styles from './css/user.module.css'
+import { useNavigate } from 'react-router-dom';
 
 const User = observer(() => {
+  const navigate = useNavigate()
   const [user, setUser] = useState(null)
   const [posts, setPosts] = useState(null)
   const {id} = useParams() 
@@ -34,7 +36,7 @@ const User = observer(() => {
         </div>
         <div className={styles.postsBar}>
           <h1 className={styles.posts}>Posts</h1>
-          <a href={POST_LIST_ROUTE + '/' + id} className={styles.postLink}>See all</a>
+          <button onClick={()=>navigate(POST_LIST_ROUTE + '/' + id)}  className={styles.postLink}>See all</button>
         </div>
         <div className={styles.postsContainer}> 
           <ul className={styles.postsList}>  
@@ -44,6 +46,7 @@ const User = observer(() => {
       </div>
     
   );}
+
 })
 
 export default User;
